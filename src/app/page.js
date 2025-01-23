@@ -1,22 +1,30 @@
+"use client";
 import Image from "next/image";
 import Header from "./components/Header";
+import { useEffect } from "react";
 import Body from "./components/Body";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <main className="h-screen overflow-y-scroll bg-gradient-to-b from-slate-800 to-slate-600">
-      <Header />
+      <Head>
+        <title>Chandimal Kumara</title>
+      </Head>
+      <div>
+        <Header />
 
-      <Body />
+        <Body />
 
-      <Experience />
+        <Experience />
 
-      <Skills />
+        <Skills />
 
-      <Contact />
+        <Contact />
+      </div>
     </main>
   );
 }
