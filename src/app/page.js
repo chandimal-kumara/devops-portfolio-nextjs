@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import Header from "./components/Header";
-import { useEffect } from "react";
 import Body from "./components/Body";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";

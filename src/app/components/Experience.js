@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { groq } from "next-sanity";
 import sanityClient from "@sanity/client";
+import Image from "next/image";
 
 const client = sanityClient({
   projectId: "sr6ptf89",
@@ -37,9 +38,12 @@ function Experience() {
             key={index}
           >
             <div className="flex items-center justify-center">
-              <img
+              <Image
                 className="rounded-full w-32 h-32 mx-auto md:mx-0 object-contain"
                 src={item?.image}
+                alt="exp-image"
+                width={128}
+                height={128}
               />
             </div>
             <h4 className="text-xl text-white font-bold mb-2 mt-4">
