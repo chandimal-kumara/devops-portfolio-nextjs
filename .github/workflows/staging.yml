@@ -18,6 +18,9 @@ jobs:
         port: ${{ secrets.DEPLOY_PORT }}
         script: |
           cd /home/chandimal/devops-portfolio/devops-portfolio-nextjs
+          nvm use 14
+          export NVM_DIR=/www/server/nvm
+          source /www/server/nvm/nvm.sh
           nvm use 20
           node -v
           git checkout staging
