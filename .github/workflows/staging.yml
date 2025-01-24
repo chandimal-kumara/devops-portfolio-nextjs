@@ -29,5 +29,4 @@ jobs:
           yarn
           yarn build
           pm2 restart 1
-          rm -r node_modules
           echo "DevOps Portfolio Nextjs Deployment Completed"
